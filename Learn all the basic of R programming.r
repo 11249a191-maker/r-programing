@@ -2,7 +2,7 @@
 Student Information System
 R Program:
 roll_no <- 264 # Integer
-name <- "naveen" # Character
+name <- "Naveen" # Character
 cgpa <- 9.00 # Numeric
 pass <- TRUE# Logical
 roll_no
