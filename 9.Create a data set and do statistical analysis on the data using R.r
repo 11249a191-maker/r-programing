@@ -4,10 +4,10 @@ R Program
 # Step 1: Create dataset
 students <- data.frame(
 Name =
-c("Arjun","Meena","Rahul","Anitha","Kiran","Sneha","Ravi","Gayathri","Suresh","Lakshmi"),
-Maths = c(80,92,73,95,85,88,72,92,76,86),
-Science = c(72,80,63,92,89,82,75,94,72,81),
-English = c(92,70,75,92,89,84,88,61,60,84)
+c("Arjun","Siva","Rahul","Anitha","Kiran","Sneha","Ravi","Gayathri","Suresh","Lakshmi"),
+Maths = c(80,96,73,95,85,88,72,92,76,86),
+Science = c(72,90,63,92,89,82,75,94,72,81),
+English = c(92,70,95,92,79,84,98,61,60,84)
 )
 # Step 2: Mean, Median, SD
 mean_marks <- sapply(students[ ,2:4], mean)
@@ -30,7 +30,7 @@ Retail Sales Data Analysis
 R Program
 # Step 1: Create dataset
 sales <- data.frame(
-Product = c("Phone","Laptop","Headset","Bag","Camera","Mouse","Keyboard"),
+Product = c("Phone","Laptop","Headset","Bag","Camera","Cooker","Keyboard"),
 Day1 = c(1,6,7,16,1,5,6),
 Day2 = c(10,2,5,12,2,4,7),
 Day3 = c(6,3,8,2,11,7,8),
@@ -56,7 +56,7 @@ R Program
 # Dataset
 patients <- data.frame(
 PatientID = 201:210,
-Name = c("Surya","Lucky","Aameer","Menakshi","Ragul","Anitha","Naren","Smirti","Gayathri","Ragu"),
+Name = c("Surya","Lucky","Aameer","Naveen","Ragul","Anitha","Naren","Smirti","Gayathri","Ragu"),
 Age = c(45,38,52,29,60,48,55,35,42,50)
 )
 # Statistical analysis
@@ -79,9 +79,9 @@ R Program
 employees <- data.frame(
 EmpID = 101:110,
 Name =
-c("Rahul","Sneha","Kiran","Anitha","Ravi","Gayathri","Suresh","Lakshmi","Arjun","Meena"),
+c("Rahul","Sneha","Kiran","Anitha","Naveen","Gayathri","Suresh","Lakshmi","Arjun","Meena"),
 Dept = c("IT","HR","Finance","IT","HR","Finance","IT","HR","Finance","IT"),
-Salary = c(30000,35000,40000,32000,36000,42000,31000,37000,45000,33000)
+Salary = c(30000,35000,40000,32000,76000,92000,31000,37000,45000,33000)
 )
 # Mean and Median per department
 dept_stats <- aggregate(Salary ~ Dept, data=employees, function(x) c(Mean=mean(x),
@@ -100,7 +100,7 @@ R Program
 ratings <- data.frame(
 ProductID = 1:10,
 Product =
-c("Phone","Laptop","Headset","Bag","Camera","Mouse","Keyboard","Charger","Tablet","Speaker"),
+c("Phone","Laptop","Headset","Bag","Camera","Mouse","Keyboard","Charger","Television","Speaker"),
 Rating = c(4,5,3,4,5,4,3,5,4,4)
 )
 # Mean, Median, Variance
