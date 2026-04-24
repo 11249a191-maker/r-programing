@@ -3,13 +3,13 @@ University Course Enrollment
 R Program
 # Data
 departments <- c("CSE", "ECE", "IT", "Mechanical")
-students <- c(180, 60, 20, 50)
+students <- c(160, 70, 50, 60)
 # Pie Chart
 pie(
 students,
 labels = departments,
 main = "Student Enrollment per Department",
-col = c("darkblue", "red", "green", "purple")
+col = c("darkblue", "red", "pink", "purple")
 )
 # Bar Chart
 barplot(
@@ -18,7 +18,7 @@ names.arg = departments,
 main = "Number of Students per Department",
 xlab = "Department",
 ylab = "Number of Students",
-col = c("blue", "red", "green", "purple")
+col = c("blue", "red", "pinl", "purple")
 )
 
 8.2
@@ -26,7 +26,7 @@ Retail Store Sales Distribution
 R Program
 # Data
 category <- c("Electronics", "Clothing", "Accessories", "Home Appliances")
-sales <- c(170000, 80000, 49000, 28000)
+sales <- c(270000, 90000, 69000, 38000)
 # Pie Chart
 pie(
 sales,
@@ -49,13 +49,13 @@ Online Exam Result Analysis
 R Program
 # Data
 grades <- c("A", "B", "C", "D")
-count <- c(15, 25, 30, 10)
+count <- c(25, 15, 20, 10)
 # Pie Chart
 pie(
 count,
 labels = grades,
 main = "Grade Distribution",
-col = c("gold", "lightblue", "pink", "lightgreen")
+col = c("gold", "lightblue", "red", "lightgreen")
 )
 # Bar Chart
 barplot(
@@ -64,7 +64,7 @@ names.arg = grades,
 main = "Number of Students per Grade",
 xlab = "Grade",
 ylab = "Number of Students",
-col = c("gold", "lightblue", "pink", "lightgreen")
+col = c("gold", "lightblue", "red", "lightgreen")
 )
 
 8.4
@@ -95,8 +95,8 @@ col = c("skyblue", "orange", "green", "pink")
 Agricultural Crop Production
 R Program
 # Data
-crop <- c("Rice", "Wheat", "Maize", "Onion")
-production <- c(290, 250, 170, 70)
+crop <- c("Rice", "Wheat", "Cotton", "Onion")
+production <- c(290, 240, 180, 80)
 # Pie Chart
 pie(
 production,
